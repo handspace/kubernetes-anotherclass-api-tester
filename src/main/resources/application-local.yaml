@@ -6,9 +6,13 @@ datasource:
 
 
 volume-path:
-  # for windows
-  persistent-volume-data: "C:\\volume\\local\\pv\\"
-  pod-volume-data: "C:\\volume\\local\\pod\\"
+  # for Linux
+  persistent-volume-data: "/docker_test/volume/local/pv"
+  pod-volume-data: "/docker_test/volume/local/pod"
+
+  # For Windows
+#  persistent-volume-data: "C:\\volume\\local\\pv\\"
+#  pod-volume-data: "C:\\volume\\local\\pod\\"
 
   # for mac
 #  persistent-volume-data: "/users/<username>/IdeaProjects/volume/local/pv/"
